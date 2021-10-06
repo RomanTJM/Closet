@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@font-face {
+    font-family: 'Crimson-text', serif;
+    font-family: 'Open Sans', sans-serif;
+    src: url();
+}
+
+body {
+    background-color: #7bc29c86;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body h1 {
+    text-align: center;
+    font-family: 'Crimson-text', serif;
+}
+
+body h2 {
+    text-align: center;
+    font-family: 'Crimson-text', serif;
+}
+
+
+/* @media screen and (max-width: 500px) {
+    body {
+        background-color: red;
+    }
+} */
+
+header nav {
+    padding: 20px;
+    border-bottom: 1px solid rgba(80, 5, 5, 0.39);
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+}
+
+nav a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #75424c;
+    text-decoration: none;
+    padding-right: 10px;
+    transition: color 3s, background-color 2s;
+}
+
+nav a:hover {
+    color: #587521;
+    text-transform: capitalize;
+    background-color: rgba(80, 5, 5, 0.39);
+}
+
+main {
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(80, 5, 5, 0.39);
+}
+
+.img-wrapper {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid rgba(80, 5, 5, 0.39);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-wrapper__img {
+    padding: 10px;
+    /* transition: margin-right 4s, transform 3s; */
+}
+
+
+/* .img-wrapper__img:hover {
+    margin-right: 450px;
+    transform: rotate(10deg)
+} */
+
+
+/* .img-wrapper__person-box {
+    position: absolute;
+    bottom: 147px;
+    left: 52%;
+    z-index: -1;
+} */
+
+
+/* #person-box p {
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} */
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.contact-box {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+address {
+    /* display: flex;
+    flex-direction: column; */
+    align-self: center;
+    display: grid;
+    grid-template-columns: 0.1fr 2fr;
+    grid-template-rows: 1fr 0.5fr;
+    grid-gap: 1vw;
+    text-align: center;
+    border: 1px solid black;
+    padding: 20px;
+    width: 200px;
+    color: #75424c;
+}
+
+.contact-box img {
+    width: 20px;
+    height: 20px;
+}
+
+footer {
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: #75424c;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
