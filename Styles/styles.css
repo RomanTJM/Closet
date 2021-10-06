@@ -152,3 +152,56 @@ body * {
     border-radius: 2px;
     background-color: #ffffff00;
 }
+
+.completed-projects-block {
+    margin: 0;
+    background-color: black;
+    height: 1074px;
+}
+
+.completed-projects-navigation {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 107px;
+}
+
+.completed-projects-navigation_item {
+    padding-right: 60.5px;
+}
+
+.completed-projects-navigation_item a {
+    font-family: Yeseva One, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+    text-decoration-line: none;
+}
+
+.completed-projects-navigation_item a:hover {
+    color: #E3B873;
+    text-decoration-line: underline;
+}
+
+.completed-projects-block_content {
+    display: flex;
+    padding-top: 53px;
+}
+
+.completed-projects-block_content__text h2 {
+    color: #E3B873;
+}
+
+.completed-projects-block_content__text p {
+    font-family: Nunito Sans, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 27px;
+    color: #ffffff;
+}
