@@ -11,26 +11,26 @@
 <body>
     <header class="header">
         <div class="container header-content">
-            <div class="logo">
+            <div class="logo subtitle">
                 IC "Repair Design Project"
             </div>
             <nav>
                 <ul class="header-navigation">
                     <li class="header-navigation_item
-                    "><a href="#home">HOME</a></li>
+                    subtitle"><a href="#home">HOME</a></li>
                     <li class="header-navigation_item
-                    "><a href="#projects">PROJECTS</a></li>
+                    subtitle"><a href="#projects">PROJECTS</a></li>
                     <li class="header-navigation_item
-                    "><a href="#">MEASUREMENT</a></li>
+                    subtitle"><a href="#">MEASUREMENT</a></li>
                     <li class="header-navigation_item
-                    "><a href="#">TEAM</a></li>
+                    subtitle"><a href="#">TEAM</a></li>
                     <li class="header-navigation_item
-                    "><a href="#">REVIEWS</a></li>
+                    subtitle"><a href="#">REVIEWS</a></li>
                     <li class="header-navigation_item
-                    "><a href="#">CONTACTS</a></li>
+                    subtitle"><a href="#">CONTACTS</a></li>
                 </ul>
             </nav>
-            <span class="phone">+7 (928) 768-32-39</span>
+            <span class="phone subtitle">+7 (928) 768-32-39</span>
             <button class="button">Request a call</button>
         </div>
     </header>
@@ -38,7 +38,7 @@
         <section class="main-block main-block-container" id="home">
             <div class="container">
                 <h1 class="title">Turnkey Repair in the <br> city of <span class="color">Rostov-on-Don</span></h1>
-                <p>Get ready-made turnkey repairs on time <br>with work time saving up to 45 days and 20% from <br> cost of materials due to the organization of work</p>
+                <p class="subtitle">Get ready-made turnkey repairs on time <br>with work time saving up to 45 days and 20% from <br> cost of materials due to the organization of work</p>
                 <button class="button">CALCULATE THE COST</button>
                 <button class="button button-white">SUBMIT YOUR APPLICATION</button>
             </div>
@@ -48,39 +48,39 @@
             <div class="container">
                 <nav>
                     <ul class="completed-projects-navigation">
-                        <li class="completed-projects-navigation_item"><a href="#">Rostov-on-Don, Admiral</a></li>
-                        <li class="completed-projects-navigation_item"><a href="#">Sochi Thieves</a></li>
-                        <li class="completed-projects-navigation_item"><a href="#">Rostov-on-Don Patriotic</a></li>
+                        <li class="completed-projects-navigation_item title"><a href="#">Rostov-on-Don, Admiral</a></li>
+                        <li class="completed-projects-navigation_item title"><a href="#">Sochi Thieves</a></li>
+                        <li class="completed-projects-navigation_item title"><a href="#">Rostov-on-Don Patriotic</a></li>
                     </ul>
                 </nav>
                 <div class="completed-projects-block_content">
                     <div class="completed-projects-block_content__text">
                         <h2 class="title">Completed <br>projects</h2>
-                        <p>Only a small part of the work performed by our company is presented <br> on the site. For 14 years on in the construction <br> market we have made happy more than 1000 families</p>
+                        <p class="subtitle">Only a small part of the work performed by our company is presented <br> on the site. For 14 years on in the construction <br> market we have made happy more than 1000 families</p>
                         <table class="completed-projects-block_table">
                             <tr>
                                 <th>
-                                    <h3 class="subtitle city">City:</h3>
+                                    <h3 class="title city">City:</h3>
                                 </th>
                                 <th>
-                                    <h3 class="subtitle area">apartment area:</h3>
+                                    <h3 class="title area">apartment area:</h3>
                                 </th>
                             </tr>
                             <tr>
-                                <td>Rostov-on-Don <br> LCD admiral</td>
-                                <td>81 m2</td>
+                                <td class="subtitle">Rostov-on-Don <br> LCD admiral</td>
+                                <td class="subtitle">81 m2</td>
                             </tr>
                             <tr>
                                 <th>
-                                    <h3 class="subtitle time">Repair time:</h3>
+                                    <h3 class="title time">Repair time:</h3>
                                 </th>
                                 <th>
-                                    <h3 class="subtitle cost">Repair Cost:</h3>
+                                    <h3 class="title cost">Repair Cost:</h3>
                                 </th>
                             </tr>
                             <tr>
-                                <td>3.5 months</td>
-                                <td>Upon request</td>
+                                <td class="subtitle">3.5 months</td>
+                                <td class="subtitle">Upon request</td>
                             </tr>
                         </table>
                         <div class="completed-projects-block_content__slider">
@@ -102,24 +102,35 @@
         <section class="repairs-block">
             <div class="repairs-block_online-control-container">
                 <div class="repairs-block_online-control-content">
-                    <h3 class="subtitle">Online control</h3>
+                    <h3 class="title">Online control</h3>
                     <div class="repairs-block_online-control-content__camera-image">
                         <img class="gold-dash" src="../Skillfactory/Vectors/gold-dash.png" alt="">
                         <img class="camera" src="../Skillfactory/Vectors/camera.png" alt="">
                         <img class="gold-dash" src="../Skillfactory/Vectors/gold-dash.png" alt="">
                     </div>
                     <div class="repairs-block_online-block-content__video">
-                        <img class="ellipse" src="../Skillfactory/Vectors/Ellipse.png" alt="">
-                        <img class="play-button" src="../Skillfactory/Vectors/Polygon.png" alt="">
+                        <div class="repairs-block_online-control-content__video-play-button">
+                            <!-- <img class="ellipse" src="../Skillfactory/Vectors/Ellipse.png" alt=""> -->
+                            <img class="play-button" src="../Skillfactory/Vectors/play-button.png" alt="">
+                        </div>
                         <div class="repairs-block_online-block-content__video-overlay"></div>
                     </div>
-                    <img src="../Skillfactory/Vectors/gold-dash-long.png" alt="">
-                    <p>At each facility, a camera is installed that broadcasts the progress of work on the <br> clock. At any time, you can go to our website and monitor the progress of work in <br> your apartment. You can watch the live broadcast from one
+                    <img class="gold-dash-long" src="../Skillfactory/Vectors/gold-dash-long.png" alt="">
+                    <p class="subtitle">At each facility, a camera is installed that broadcasts the progress of work on the <br> clock. At any time, you can go to our website and monitor the progress of work in <br> your apartment. You can watch the live broadcast from one
                         of our facilities! <br> Leave a request below and you will receive a link to the broadcast.</p>
-                    <input type="What is your name:">
-                    <input type="Your phone number:">
-                    <button class="button">Submit</button>
-                    <input type="checkbox"><span>I agree to the processing of personal data</span>
+                    <div class="repairs-block_online-control-content__input-block">
+                        <div class="repairs-block_online-control-content input-name">
+                            <span class="subtitle">Name</span> <br>
+                            <input class="subtitle" type="text" placeholder="What is your name:">
+                        </div>
+                        <div class="repairs-block_online-control-content input-phone">
+                            <span class="subtitle">Phone</span> <br>
+                            <input class="subtitle" type="tel" placeholder="Your phone number:">
+                        </div>
+                        <button class="button">Submit</button>
+                        <!-- <input type="checkbox"><span>I agree to the processing of personal data</span> -->
+                    </div>
+
                 </div>
             </div>
             <div class="container">

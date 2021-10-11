@@ -9,8 +9,7 @@
 }
 
 body {
-    margin: 0;
-    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    margin: 0 auto;
 }
 
 body * {
@@ -44,21 +43,14 @@ body * {
     font-family: 'Yeseva One', 'Times New Roman', Times, serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
-    line-height: 53px;
     text-transform: uppercase;
-    color: white;
     /* width: 676px; */
 }
 
 .subtitle {
-    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 25px;
-    text-transform: uppercase;
-    color: #E3B873;
     margin: 0;
 }
 
@@ -74,9 +66,6 @@ body * {
 }
 
 .logo {
-    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 11px;
     line-height: 15px;
     text-transform: uppercase;
@@ -95,9 +84,6 @@ body * {
 .header-navigation_item a {
     text-decoration-line: none;
     color: white;
-    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 11px;
     line-height: 15px;
 }
@@ -107,14 +93,14 @@ body * {
 }
 
 .phone {
-    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 11px;
     line-height: 15px;
     text-align: right;
-    text-decoration-line: underline;
     color: #E3B873;
+}
+
+.phone:hover {
+    text-decoration-line: underline;
 }
 
 .main-block {
@@ -130,18 +116,23 @@ body * {
     z-index: 1;
 }
 
-.main-block-container p {
-    /* width: 504px; */
-    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 36px;
+h1 {
+    font-size: 40px;
+    line-height: 53px;
+    text-transform: uppercase;
     color: #FFFFFF;
 }
 
-.title .color {
+h1 .color {
     color: #E3B873
+}
+
+.main-block-container p {
+    margin-top: 19px;
+    margin-bottom: 41px;
+    font-size: 22px;
+    line-height: 36px;
+    color: #FFFFFF;
 }
 
 .main-block-overlay {
@@ -198,12 +189,8 @@ body * {
 }
 
 .completed-projects-navigation_item a {
-    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 19px;
-    text-transform: uppercase;
     color: rgba(255, 255, 255, 0.3);
     text-decoration-line: none;
 }
@@ -228,13 +215,9 @@ body * {
 }
 
 .completed-projects-block_content__text p {
-    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 27px;
     color: #ffffff;
-    margin: 0;
 }
 
 .completed-projects-block_table {
@@ -245,6 +228,9 @@ body * {
 .completed-projects-block_table th {
     text-align: left;
     padding-bottom: 9px;
+    font-size: 18px;
+    line-height: 25px;
+    color: #E3B873;
 }
 
 th .city {
@@ -266,13 +252,9 @@ th .cost {
 }
 
 .completed-projects-block_table td {
-    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 13px;
     line-height: 21px;
     color: #FFFFFF;
-    margin: 0;
 }
 
 .completed-projects-block_content__slider {
@@ -339,6 +321,7 @@ th .cost {
     height: 437px;
     position: relative;
     align-items: center;
+    margin-bottom: 62px;
 }
 
 .repairs-block_online-block-content__video-overlay {
@@ -349,16 +332,74 @@ th .cost {
     bottom: 0;
     left: 0;
     background-color: rgba(0, 0, 0, .8);
-    z-index: -1;
+    z-index: 0;
 }
 
-.repairs-block_online-block-content__video .ellipse {
+.repairs-block_online-control-content__video-play-button {
+    margin: 174px 367px 175px 365px;
+    background-image: url(../Vectors/Ellipse.png);
+    background-size: contain;
+    width: 85px;
+    height: 85px;
+    z-index: 1;
+    position: absolute;
+}
+
+
+/* разобраться, почему изображение круга не 85 на 85px */
+
+
+/* .repairs-block_online-block-content__video .ellipse {
     margin: 174px 367px 175px 365px;
     z-index: 1;
     width: 85px;
     height: 85px;
-}
+    position: relative;
+} */
 
 .repairs-block_online-block-content__video .play-button {
-    margin: 174px 367px 175px 365px;
+    margin: 29px 29px 28px 28px;
+    width: 28px;
+    height: 28px;
+}
+
+
+/* .repairs-block_online-control-content img {
+    display: flex;
+    justify-content: center;
+} */
+
+.repairs-block_online-control-content p {
+    margin-top: 34px;
+    margin-bottom: 93px;
+    font-size: 18px;
+    line-height: 37px;
+    text-align: center;
+    color: #363636;
+}
+
+.repairs-block_online-control-content__input-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.repairs-block_online-control-content__input-block span {
+    text-align: start;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(54, 54, 54, 0.5);
+}
+
+
+/* при общем положении text-align:center как сделать, чтобы span-ы располагались слева? */
+
+.repairs-block_online-control-content__input-block input {
+    width: 231px;
+    border: none;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+    padding-bottom: 8px;
 }
