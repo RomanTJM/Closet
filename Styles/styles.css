@@ -296,3 +296,69 @@ th .cost {
     width: 679px;
     height: 482px;
 }
+
+.repairs-block {
+    height: 1466px;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.repairs-block_online-control-container {
+    margin: 0 auto;
+    max-width: 837px;
+}
+
+.repairs-block_online-control-content {
+    text-align: center;
+}
+
+.repairs-block_online-control-content h3 {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 13px;
+}
+
+.repairs-block_online-control-content__camera-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 31px;
+}
+
+.repairs-block_online-control-content__camera-image .camera {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.repairs-block_online-block-content__video {
+    background-image: url("../Images/online-works.jpg");
+    background-size: cover;
+    height: 437px;
+    position: relative;
+    align-items: center;
+}
+
+.repairs-block_online-block-content__video-overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: -1;
+}
+
+.repairs-block_online-block-content__video .ellipse {
+    margin: 174px 367px 175px 365px;
+    z-index: 1;
+    width: 85px;
+    height: 85px;
+}
+
+.repairs-block_online-block-content__video .play-button {
+    margin: 174px 367px 175px 365px;
+}
