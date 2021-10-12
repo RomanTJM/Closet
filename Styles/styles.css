@@ -24,18 +24,18 @@ body * {
 .button {
     background: #E3B873;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border: 1px solid;
+    border-color: transparent;
     border-radius: 2px;
-    border: 0;
     outline: black;
-    padding: 13px 33px;
+    /* padding: 13px 33px; */
     font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 11px;
-    line-height: 15px;
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
+    cursor: pointer;
 }
 
 .title {
@@ -63,6 +63,20 @@ body * {
     justify-content: space-between;
     align-items: center;
     height: 83px;
+}
+
+.header button {
+    font-size: 11px;
+    line-height: 15px;
+    width: 161px;
+    height: 37px;
+}
+
+.header button:hover {
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background-color: #ffffff00;
 }
 
 .logo {
@@ -151,6 +165,8 @@ h1 .color {
     height: 51px;
     padding: 19px 22px;
     margin-right: 20px;
+    font-size: 11px;
+    line-height: 15px;
 }
 
 
@@ -162,7 +178,7 @@ h1 .color {
     background-color: #ffffff00;
 } */
 
-.button:hover {
+.main-block button:hover {
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 2px;
@@ -288,11 +304,14 @@ th .cost {
 .repairs-block_online-control-container {
     margin: 0 auto;
     max-width: 837px;
-}
-
-.repairs-block_online-control-content {
+    transform: translateY(-298px);
     text-align: center;
 }
+
+
+/* .repairs-block_online-control-content {
+    text-align: center;
+} */
 
 .repairs-block_online-control-content h3 {
     font-size: 20px;
@@ -302,7 +321,8 @@ th .cost {
     margin-bottom: 13px;
 }
 
-.repairs-block_online-control-content__camera-image {
+.repairs-block_online-control-content__camera-image,
+.repairs-block_types-content__handcrafts-image {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -310,7 +330,8 @@ th .cost {
     margin-bottom: 31px;
 }
 
-.repairs-block_online-control-content__camera-image .camera {
+.repairs-block_online-control-content__camera-image .camera,
+.repairs-block_types-content__handcrafts-image .handcrafts {
     padding-left: 8px;
     padding-right: 8px;
 }
@@ -337,37 +358,21 @@ th .cost {
 
 .repairs-block_online-control-content__video-play-button {
     margin: 174px 367px 175px 365px;
-    background-image: url(../Vectors/Ellipse.png);
-    background-size: contain;
+    background: #E3B873;
+    box-shadow: 0px 5px 30px rgba(227, 184, 115, 0.2);
+    border-radius: 50%;
     width: 85px;
     height: 85px;
     z-index: 1;
     position: absolute;
+    text-align: center;
 }
 
-
-/* разобраться, почему изображение круга не 85 на 85px */
-
-
-/* .repairs-block_online-block-content__video .ellipse {
-    margin: 174px 367px 175px 365px;
-    z-index: 1;
-    width: 85px;
-    height: 85px;
-    position: relative;
-} */
-
 .repairs-block_online-block-content__video .play-button {
-    margin: 29px 29px 28px 28px;
+    margin: 28px;
     width: 28px;
     height: 28px;
 }
-
-
-/* .repairs-block_online-control-content img {
-    display: flex;
-    justify-content: center;
-} */
 
 .repairs-block_online-control-content p {
     margin-top: 34px;
@@ -385,21 +390,134 @@ th .cost {
 }
 
 .repairs-block_online-control-content__input-block span {
-    text-align: start;
     font-family: 'Nunito Sans';
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 21px;
     color: rgba(54, 54, 54, 0.5);
+    padding-bottom: 7px;
 }
 
-
-/* при общем положении text-align:center как сделать, чтобы span-ы располагались слева? */
+.input-name,
+.input-phone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
 .repairs-block_online-control-content__input-block input {
     width: 231px;
     border: none;
     border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+    padding: 0;
     padding-bottom: 8px;
+}
+
+
+/* при вводе текста убрать синюю рамку */
+
+.repairs-block_online-control-content__input-block button {
+    width: 200px;
+    height: 51px;
+    font-size: 13px;
+    line-height: 27px;
+}
+
+
+/* нужно ли делать :hover на эту кнопку? если надо, то какие стили применять? */
+
+.repairs-block_online-control-content__checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 37px;
+    font-size: 14px;
+    line-height: 23px;
+    color: #181818;
+}
+
+.repairs-block_online-control-content__checkbox input {
+    margin: 0;
+    margin-right: 9px;
+    width: 18px;
+    height: 18px;
+}
+
+.repairs-block_online-control-content__checkbox .input:checked {
+    background: #E3B873;
+    border-radius: 1px;
+}
+
+
+/* проблемы с псевдоклассом checked. бэкграунд не input-а не меняется */
+
+.repairs-block_types-content {
+    margin-top: -298px;
+}
+
+.repairs-block_types-content h3 {
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 13px;
+}
+
+.repairs-block_types-content__types {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin-bottom: 53px; */
+}
+
+.redecorating,
+.overhaul,
+.designer-repair {
+    display: flex;
+    flex-direction: column;
+}
+
+.repairs-block_types-content__types img {
+    background: #C4C4C4;
+}
+
+.redecorating-list,
+.overhaul-list,
+.designer-repair-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 330px;
+    height: 286px;
+    transform: translate(31px, -127px);
+    background: #ffffff;
+    padding-top: 25px;
+    padding-left: 34px;
+}
+
+.repairs-block_types-content__types h4 {
+    font-size: 18px;
+    line-height: 25px;
+    color: #363636;
+}
+
+.repairs-block_types-content__types li {
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+}
+
+.repairs-block_types-content__types ul {
+    padding: 0;
+    padding-top: 13px;
+    list-style-type: none;
+}
+
+.repairs-block_types-content__types button {
+    transform: translate(31px, -153px);
+    width: 228px;
+    height: 54px;
+    font-size: 18px;
+    line-height: 25px;
 }
