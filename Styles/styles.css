@@ -111,6 +111,7 @@ body * {
     line-height: 15px;
     text-align: right;
     color: #E3B873;
+    cursor: pointer;
 }
 
 .phone:hover {
@@ -318,25 +319,36 @@ th .cost {
     line-height: 28px;
     text-align: center;
     color: #ffffff;
-    margin-bottom: 13px;
 }
 
-.repairs-block_online-control-content__camera-image,
-.repairs-block_types-content__handcrafts-image {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 31px;
+.repairs-block-online-control-content_camera-image,
+.repairs-block-types-content__handcrafts-image {
+    margin: 13px 0px 31px 0px;
+    text-align: center;
+    position: relative;
 }
 
-.repairs-block_online-control-content__camera-image .camera,
-.repairs-block_types-content__handcrafts-image .handcrafts {
-    padding-left: 8px;
-    padding-right: 8px;
+.repairs-block-online-control-content_camera-image::before {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 1.54px;
+    background-color: #E3B873;
+    top: 50%;
+    left: 42.5%;
 }
 
-.repairs-block_online-block-content__video {
+.repairs-block-online-control-content_camera-image::after {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 1.54px;
+    background-color: #E3B873;
+    top: 50%;
+    right: 42.5%;
+}
+
+.repairs-block-online-block-content_video {
     background-image: url("../Images/online-works.jpg");
     background-size: cover;
     height: 437px;
@@ -345,7 +357,7 @@ th .cost {
     margin-bottom: 62px;
 }
 
-.repairs-block_online-block-content__video-overlay {
+.repairs-block-online-block-content_video::after {
     content: '';
     position: absolute;
     top: 0;
@@ -356,8 +368,7 @@ th .cost {
     z-index: 0;
 }
 
-.repairs-block_online-control-content__video-play-button {
-    margin: 174px 367px 175px 365px;
+.repairs-block-online-control-content_video-play-button {
     background: #E3B873;
     box-shadow: 0px 5px 30px rgba(227, 184, 115, 0.2);
     border-radius: 50%;
@@ -365,14 +376,25 @@ th .cost {
     height: 85px;
     z-index: 1;
     position: absolute;
-    text-align: center;
+    position: relative;
+    top: 40%;
+    left: 45%;
+    cursor: pointer;
 }
 
-.repairs-block_online-block-content__video .play-button {
-    margin: 28px;
+.repairs-block-online-control-content_video-play-button::after {
+    content: url("//Skillfactory/Vectors/play-button.png");
+    position: absolute;
+    top: 34%;
+    left: 34%;
     width: 28px;
     height: 28px;
+    cursor: pointer;
+    z-index: 2;
 }
+
+
+/* не отображается сама кнопка. z-index не работает */
 
 .repairs-block_online-control-content p {
     margin-top: 34px;
@@ -463,6 +485,26 @@ th .cost {
     margin-bottom: 13px;
 }
 
+.repairs-block-types-content__handcrafts-image::before {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 1.54px;
+    background-color: #E3B873;
+    top: 50%;
+    left: 44%;
+}
+
+.repairs-block-types-content__handcrafts-image::after {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 1.54px;
+    background-color: #E3B873;
+    top: 50%;
+    right: 44%;
+}
+
 .repairs-block_types-content__types {
     display: flex;
     flex-direction: row;
@@ -520,4 +562,53 @@ th .cost {
     height: 54px;
     font-size: 18px;
     line-height: 25px;
+}
+
+.measurement-block {
+    height: 645px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 124px;
+}
+
+.measurement-block-list-content {
+    background-image: url("../Images/measurement-image.jpg");
+    background-size: cover;
+    width: 1006px;
+    margin-right: 131px;
+    position: relative;
+}
+
+.measurement-block-list-content_list {
+    position: relative;
+    right: 79.19px;
+}
+
+.measurement-block-list-content_list li {
+    /* list-style-type: decimal-leading-zero; */
+    list-style-type: none;
+    z-index: 1;
+    margin-left: 17px;
+    margin-bottom: 114px;
+    /* position: relative; */
+    font-size: 14px;
+    line-height: 19px;
+    color: #363636;
+}
+
+.measurement-block-list-content_list li .appointment::before {
+    content: "01";
+    width: 41.76px;
+    height: 41.76px;
+    background-color: #E3B873;
+    border-radius: 30px;
+    position: absolute;
+    top: -5px;
+    left: -71px;
+    z-index: 0;
+    text-align: center;
+    font-family: "Yeseva One", 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ffffff;
 }
