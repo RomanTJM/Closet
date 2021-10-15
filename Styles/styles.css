@@ -38,6 +38,45 @@ body * {
     cursor: pointer;
 }
 
+.input {
+    border: none;
+    padding: 8px 0 8px 0;
+    background-color: transparent;
+    outline: transparent;
+}
+
+*::placeholder {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.label {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+}
+
+.checkbox {
+    width: 18px;
+    height: 18px;
+    border-radius: 1px;
+}
+
+.checkbox::after {
+    content: "I agree to the processing of personal data";
+    color: white;
+    display: inline-block;
+    width: 259px;
+    position: absolute;
+    left: 26px;
+    top: 3px;
+}
+
 .title {
     margin: 0;
     font-family: 'Yeseva One', 'Times New Roman', Times, serif;
@@ -169,15 +208,6 @@ h1 .color {
     font-size: 11px;
     line-height: 15px;
 }
-
-
-/* .button-white {
-    margin-left: 20px;
-    border: 1px solid #FFFFFF;
-    box-sizing: border-box;
-    border-radius: 2px;
-    background-color: #ffffff00;
-} */
 
 .main-block button:hover {
     border: 1px solid #FFFFFF;
@@ -405,13 +435,14 @@ th .cost {
     color: #363636;
 }
 
-.repairs-block_online-control-content__input-block {
+.repairs-block-online-control-content-input-block {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 37px;
 }
 
-.repairs-block_online-control-content__input-block span {
+.repairs-block-online-control-content-input-block span {
     font-family: 'Nunito Sans';
     font-style: normal;
     font-weight: normal;
@@ -428,18 +459,16 @@ th .cost {
     align-items: flex-start;
 }
 
-.repairs-block_online-control-content__input-block input {
+.repairs-block-online-control-content-input-block input {
     width: 231px;
-    border: none;
     border-bottom: 1px solid rgba(54, 54, 54, 0.3);
-    padding: 0;
-    padding-bottom: 8px;
 }
 
+.repairs-block-online-control-content-input-block input::placeholder {
+    color: #363636;
+}
 
-/* при вводе текста убрать синюю рамку */
-
-.repairs-block_online-control-content__input-block button {
+.repairs-block-online-control-content-input-block button {
     width: 200px;
     height: 51px;
     font-size: 13px;
@@ -450,22 +479,23 @@ th .cost {
 /* нужно ли делать :hover на эту кнопку? если надо, то какие стили применять? */
 
 .repairs-block_online-control-content__checkbox {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    margin-top: 37px;
-    font-size: 14px;
+    align-items: center; */
+    /* margin-top: 37px; */
+    /* font-size: 14px;
     line-height: 23px;
-    color: #181818;
+    color: #181818; */
 }
 
-.repairs-block_online-control-content__checkbox input {
+
+/* .repairs-block_online-control-content__checkbox input {
     margin: 0;
     margin-right: 9px;
     width: 18px;
     height: 18px;
-}
+} */
 
 .repairs-block_online-control-content__checkbox .input:checked {
     background: #E3B873;
@@ -477,6 +507,7 @@ th .cost {
 
 .repairs-block_types-content {
     margin-top: -298px;
+    margin-bottom: 124px;
 }
 
 .repairs-block_types-content h3 {
@@ -508,8 +539,8 @@ th .cost {
 .repairs-block_types-content__types {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    /* margin-bottom: 53px; */
+    justify-content: space-around;
+    margin: 0 -15px;
 }
 
 .redecorating,
@@ -517,6 +548,7 @@ th .cost {
 .designer-repair {
     display: flex;
     flex-direction: column;
+    /* margin: 0 15px; */
 }
 
 .repairs-block_types-content__types img {
@@ -574,9 +606,12 @@ th .cost {
 .measurement-block-list-content {
     background-image: url("../Images/measurement-image.jpg");
     background-size: cover;
-    width: 1006px;
-    margin-right: 131px;
+    width: 703px;
+    /* margin-right: 131px; */
     position: relative;
+    left: -103px;
+    padding-top: 117px;
+    padding-left: 307px;
 }
 
 .measurement-block-list-content_list {
@@ -602,6 +637,8 @@ th .cost {
     height: 41.76px;
     background-color: #E3B873;
     border-radius: 30px;
+    border: 8px solid #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
     position: absolute;
     top: -5px;
     left: -71px;
@@ -612,3 +649,58 @@ th .cost {
     line-height: 25px;
     color: #ffffff;
 }
+
+.measurement-block-input-content {
+    width: 506px;
+    height: 509px;
+    background-color: black;
+    margin-top: 106px;
+    padding-top: 28px;
+    padding-bottom: 27px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.measurement-block-input-content h3 {
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.measurement-block-input-content .input {
+    width: 408px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    color: white;
+    position: relative;
+}
+
+.measurement-block-input-content input::placeholder {
+    color: #ffffff;
+}
+
+.measurement-block-input-content .label {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.measurement-block-input-content .checkbox {
+    align-self: flex-start;
+    margin-left: 49px;
+    position: relative;
+}
+
+
+/* .measurement-block-input-content .checkbox::after {
+    content: "I agree to the processing of personal data";
+    color: white;
+    display: inline-block;
+    width: 259px;
+    position: absolute;
+    left: 26px;
+    top: 3px;
+} */
