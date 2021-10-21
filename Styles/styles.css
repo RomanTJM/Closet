@@ -45,7 +45,7 @@ body * {
 }
 
 *::placeholder {
-    font-family: Nunito Sans;
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -53,7 +53,7 @@ body * {
 }
 
 .label {
-    font-family: Nunito Sans;
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -666,7 +666,6 @@ th .cost {
 .measurement-block-input-content .input {
     width: 408px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    color: white;
     position: relative;
 }
 
@@ -825,3 +824,401 @@ th .cost {
 .gallery-block-second-column-content img {
     padding-bottom: 37px;
 }
+
+.clients-block {
+    text-align: center;
+    margin-top: 110.47px;
+    margin-bottom: 354.65px;
+}
+
+.clients-block h2 {
+    margin-bottom: 13.22px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #181818;
+}
+
+.clients-block_deal-image {
+    position: relative;
+}
+
+.clients-block_deal-image::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 1.54px;
+    background: #E3B873;
+    border-radius: 30px;
+    top: 50%;
+    right: 52%;
+}
+
+.clients-block_deal-image::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 1.54px;
+    background: #E3B873;
+    border-radius: 30px;
+    top: 50%;
+    left: 52%;
+}
+
+.clients-block p {
+    margin-top: 24.16px;
+    font-size: 18px;
+    line-height: 29px;
+    color: #363636;
+}
+
+.clients-block-clients-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 39px;
+    text-align: start;
+}
+
+.clients-block-clients-content_first-client,
+.clients-block-clients-content_second-client,
+.clients-block-clients-content_third-client {
+    width: 376px;
+    padding-top: 41px;
+}
+
+.clients-block-clients-content .title {
+    font-size: 18px;
+    line-height: 23px;
+    color: #181818;
+    padding-left: 119px;
+    position: relative;
+}
+
+.clients-block-clients-content_first-client h3::before {
+    content: "";
+    position: absolute;
+    background-image: url("../Vectors/first-client.png");
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    top: -37%;
+    left: 15px;
+}
+
+.clients-block-clients-content_second-client h3::before {
+    content: "";
+    position: absolute;
+    background-image: url("../Vectors/second-client.png");
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    top: -37%;
+    left: 15px;
+}
+
+.clients-block-clients-content_third-client h3::before {
+    content: "";
+    position: absolute;
+    background-image: url("../Vectors/third-client.png");
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    top: -37%;
+    left: 15px;
+}
+
+.clients-block-clients-content p {
+    display: inline-block;
+    /* width: 324.08px; */
+    padding-left: 20px;
+    margin-top: 37px;
+}
+
+.clients-block-clients-content .subtitle {
+    font-size: 13px;
+    line-height: 23px;
+    color: #959595;
+}
+
+.clients-block-clients-content_first-client-result-box,
+.clients-block-clients-content_second-client-result-box,
+.clients-block-clients-content_third-client-result-box {
+    margin-top: 63px;
+    width: 293.75px;
+    height: 54px;
+    background-color: #E3B873;
+    padding-top: 17.07px;
+    padding-left: 61px;
+}
+
+.clients-block-clients-content_first-client-result-box .title,
+.clients-block-clients-content_second-client-result-box .title,
+.clients-block-clients-content_third-client-result-box .title {
+    font-size: 17px;
+    line-height: 24px;
+    color: #ffffff;
+    padding: 0;
+}
+
+.clients-block-clients-content_first-client-result-box .meters,
+.clients-block-clients-content_second-client-result-box .meters,
+.clients-block-clients-content_third-client-result-box .meters {
+    padding-right: 79.05px;
+    position: relative;
+}
+
+.clients-block-clients-content_first-client-result-box .meters::before,
+.clients-block-clients-content_second-client-result-box .meters::before,
+.clients-block-clients-content_third-client-result-box .meters::before {
+    content: url("../Vectors/meters-image.png");
+    position: absolute;
+    top: -40%;
+    left: -49px;
+}
+
+.clients-block-clients-content_first-client-result-box .meters::after,
+.clients-block-clients-content_second-client-result-box .meters::after,
+.clients-block-clients-content_third-client-result-box .meters::after {
+    content: "";
+    position: absolute;
+    height: 54.03px;
+    border: 0.75px solid #FFFFFF;
+    top: -20px;
+    left: 60px;
+}
+
+.clients-block-clients-content_first-client-result-box .days,
+.clients-block-clients-content_second-client-result-box .days,
+.clients-block-clients-content_third-client-result-box .days {
+    position: relative;
+}
+
+.clients-block-clients-content_first-client-result-box .days::before,
+.clients-block-clients-content_second-client-result-box .days::before,
+.clients-block-clients-content_third-client-result-box .days::before {
+    content: url("../Vectors/days-image.png");
+    position: absolute;
+    top: -40%;
+    left: -49px;
+}
+
+.clients-block_image {
+    position: relative;
+}
+
+.clients-block_image::before {
+    content: "";
+    position: absolute;
+    top: -74px;
+    left: -534px;
+    width: 1127px;
+    height: 505.43px;
+    background-image: url("..//Images/clients-block-background.png");
+    background-repeat: no-repeat;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    opacity: 0.1;
+    overflow: hidden;
+}
+
+.clients-block_image::after {
+    content: "";
+    position: absolute;
+    top: -74px;
+    /* right: -503px; */
+    width: 729px;
+    height: 505.43px;
+    background-image: url("..//Images/clients-block-background.png");
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    overflow: hidden;
+}
+
+
+/* нужно было много химичить с этими картинками. возможно, что есть более элегантные решения для верстки этого фона. плюс, картинки не на всю ширину экрана, даже при выведения блока из .container */
+
+.contacts-block {
+    margin-top: 354px;
+    height: 953.9px;
+    background-image: url("../Images/contacts-block-background.jpg");
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contacts-block::after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.contacts-block-question-content {
+    width: 883px;
+    height: 445.32px;
+    transform: translateY(-222.66px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #131313;
+    z-index: 1;
+}
+
+.contacts-block-question-content h3 {
+    margin-top: 34.4px;
+    margin-bottom: 45.8px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #ffffff;
+}
+
+.contacts-block-question-content .input {
+    width: 231px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    position: relative;
+}
+
+.contacts-block-question-content input::placeholder {
+    color: #ffffff;
+}
+
+.contacts-block-question-content .label {
+    /* margin-left: 181.5px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.contacts-block-question-content label:nth-child(4) {
+    width: 516.82px;
+    /* margin-bottom: 52px; */
+}
+
+.contacts-block-question-content .checkbox {
+    align-self: flex-start;
+    margin: 0px 0px 0px 304.23px;
+}
+
+.contacts-block-question-content .button {
+    margin-top: 50.45px;
+    margin-bottom: 34.4px;
+    padding-top: 4px;
+    font-size: 13px;
+    line-height: 27px;
+    width: 200px;
+    height: 51px;
+}
+
+.contacts-block-contacts-content {
+    margin-top: -170.65px;
+    z-index: 1;
+    text-align: center;
+}
+
+.contacts-block-contacts-content h3 {
+    margin-bottom: 26px;
+    position: relative;
+    font-size: 20px;
+    line-height: 28px;
+    color: #E3B873;
+}
+
+.contacts-block-contacts-content_mail {
+    background-image: url("../Vectors/mail.png");
+    margin-right: 15px;
+}
+
+.contacts-block-contacts-content_instagram {
+    background-image: url("../Vectors/instagram.png");
+}
+
+.contacts-block-contacts-content_mail,
+.contacts-block-contacts-content_instagram {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.contacts-block-contacts-content_map {
+    margin: 43.29px 0px 65.93px 0;
+    background: #C4C4C4;
+    background-image: url("../Images/map-image.jpg");
+    background-size: cover;
+    width: 925px;
+    height: 465px;
+    z-index: 1;
+}
+
+.footer {
+    background-color: black;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 133px;
+}
+
+.footer button {
+    font-size: 11px;
+    line-height: 15px;
+    width: 161px;
+    height: 37px;
+}
+
+.footer button:hover {
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background-color: #ffffff00;
+}
+
+
+/* .logo {
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #E3B873;
+} */
+
+.footer-navigation {
+    list-style-type: none;
+    display: flex;
+}
+
+.footer-navigation_item {
+    margin-right: 47px;
+}
+
+.footer-navigation_item a {
+    text-decoration-line: none;
+    color: white;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.footer-navigation_item a:hover {
+    color: #E3B873;
+}
+
+
+/* .phone {
+    font-size: 11px;
+    line-height: 15px;
+    text-align: right;
+    color: #E3B873;
+    cursor: pointer;
+}
+
+.phone:hover {
+    text-decoration-line: underline;
+} */
