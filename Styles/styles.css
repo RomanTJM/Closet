@@ -338,11 +338,6 @@ th .cost {
     text-align: center;
 }
 
-
-/* .repairs-block_online-control-content {
-    text-align: center;
-} */
-
 .repairs-block-online-control-content h3 {
     font-size: 20px;
     line-height: 28px;
@@ -351,7 +346,7 @@ th .cost {
 }
 
 .repairs-block-online-control-content_camera-image,
-.repairs-block-types-content__handcrafts-image {
+.repairs-block-types-content_handcrafts-image {
     margin: 13px 0px 31px 0px;
     text-align: center;
     position: relative;
@@ -364,7 +359,7 @@ th .cost {
     height: 1.54px;
     background-color: #E3B873;
     top: 50%;
-    left: 42.5%;
+    left: 361px;
 }
 
 .repairs-block-online-control-content_camera-image::after {
@@ -374,7 +369,7 @@ th .cost {
     height: 1.54px;
     background-color: #E3B873;
     top: 50%;
-    right: 42.5%;
+    right: 361px;
 }
 
 .repairs-block-online-block-content_video {
@@ -386,7 +381,7 @@ th .cost {
     margin-bottom: 62px;
 }
 
-.repairs-block-online-block-content_video::after {
+.repairs-block-online-block-content_video::before {
     content: '';
     position: absolute;
     top: 0;
@@ -397,41 +392,37 @@ th .cost {
     z-index: 0;
 }
 
-.repairs-block-online-control-content_video-play-button {
+.repairs-block-online-block-content_video::after {
+    content: url("../Vectors/play-button.png");
+    position: absolute;
+    top: 174px;
+    left: 381px;
+    padding: 29px 29px 28px 28px;
     background: #E3B873;
     box-shadow: 0px 5px 30px rgba(227, 184, 115, 0.2);
     border-radius: 50%;
-    width: 85px;
-    height: 85px;
     z-index: 1;
-    position: absolute;
-    position: relative;
-    top: 40%;
-    left: 45%;
     cursor: pointer;
 }
-
-.repairs-block-online-control-content_video-play-button::after {
-    content: url("//Skillfactory/Vectors/play-button.png");
-    position: absolute;
-    top: 34%;
-    left: 34%;
-    width: 28px;
-    height: 28px;
-    cursor: pointer;
-    z-index: 2;
-}
-
-
-/* не отображается сама кнопка. z-index не работает */
 
 .repairs-block-online-control-content p {
-    margin-top: 34px;
+    margin-top: 98.5px;
     margin-bottom: 93px;
     font-size: 18px;
     line-height: 37px;
     text-align: center;
     color: #363636;
+    position: relative;
+}
+
+.repairs-block-online-control-content p::before {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 1.54px;
+    background-color: #E3B873;
+    top: -34.46px;
+    left: 388px;
 }
 
 .repairs-block-online-control-content-input-block {
@@ -484,7 +475,7 @@ th .cost {
     top: 3px;
 }
 
-.repairs-block_online-control-content__checkbox .input:checked {
+.repairs-block-online-control-content_checkbox .input:checked {
     background: #E3B873;
     border-radius: 1px;
 }
@@ -492,38 +483,38 @@ th .cost {
 
 /* проблемы с псевдоклассом checked. бэкграунд не input-а не меняется */
 
-.repairs-block_types-content {
+.repairs-block-types-content {
     margin-top: -298px;
     margin-bottom: 124px;
 }
 
-.repairs-block_types-content h3 {
+.repairs-block-types-content h3 {
     text-align: center;
     /* margin-top: 75px; */
     margin-bottom: 13px;
 }
 
-.repairs-block-types-content__handcrafts-image::before {
+.repairs-block-types-content_handcrafts-image::before {
     content: '';
     position: absolute;
     width: 32px;
     height: 1.54px;
     background-color: #E3B873;
     top: 50%;
-    left: 44%;
+    left: 548px;
 }
 
-.repairs-block-types-content__handcrafts-image::after {
+.repairs-block-types-content_handcrafts-image::after {
     content: '';
     position: absolute;
     width: 32px;
     height: 1.54px;
     background-color: #E3B873;
     top: 50%;
-    right: 44%;
+    right: 548px;
 }
 
-.repairs-block_types-content__types {
+.repairs-block-types-content_types {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -538,7 +529,7 @@ th .cost {
     /* margin: 0 15px; */
 }
 
-.repairs-block_types-content__types img {
+.repairs-block-types-content_types img {
     background: #C4C4C4;
 }
 
@@ -557,30 +548,34 @@ th .cost {
     padding-left: 34px;
 }
 
-.repairs-block_types-content__types h4 {
+.repairs-block-types-content_types h4 {
     font-size: 18px;
     line-height: 25px;
     color: #363636;
 }
 
-.repairs-block_types-content__types li {
+.repairs-block-types-content_types li {
     font-size: 13px;
     line-height: 27px;
     color: #959595;
 }
 
-.repairs-block_types-content__types ul {
+.repairs-block-types-content_types ul {
     padding: 0;
     padding-top: 13px;
     list-style-type: none;
 }
 
-.repairs-block_types-content__types button {
+.repairs-block-types-content_price {
     transform: translate(31px, -153px);
     width: 228px;
     height: 54px;
+    background-color: #E3B873;
     font-size: 18px;
     line-height: 25px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 17px;
 }
 
 .measurement-block {
@@ -612,17 +607,103 @@ th .cost {
 .measurement-block-list-content_list li {
     /* list-style-type: decimal-leading-zero; */
     list-style-type: none;
-    z-index: 1;
+    /* z-index: 1; */
     margin-left: 17px;
     margin-bottom: 114px;
-    /* position: relative; */
+    position: relative;
     font-size: 14px;
     line-height: 19px;
     color: #363636;
 }
 
-.measurement-block-list-content_list li .appointment::before {
+.measurement-block-list-content_list .appointment::before {
     content: "01";
+    position: absolute;
+    width: 41.76px;
+    height: 41.76px;
+    background-color: #E3B873;
+    border-radius: 30px;
+    border: 8px solid #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    top: -12px;
+    left: -71px;
+    z-index: 1;
+    text-align: center;
+    font-family: "Yeseva One", 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ffffff;
+}
+
+.measurement-block-list-content_list .metering::before {
+    content: "02";
+    position: absolute;
+    width: 41.76px;
+    height: 41.76px;
+    background-color: #E3B873;
+    border-radius: 30px;
+    border: 8px solid #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    top: -17px;
+    left: -71px;
+    text-align: center;
+    font-family: "Yeseva One", 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ffffff;
+}
+
+.measurement-block-list-content_list .consulation::before {
+    content: "03";
+    position: absolute;
+    width: 41.76px;
+    height: 41.76px;
+    background-color: #E3B873;
+    border-radius: 30px;
+    border: 8px solid #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    top: -17px;
+    left: -71px;
+    z-index: 1;
+    text-align: center;
+    font-family: "Yeseva One", 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ffffff;
+}
+
+.measurement-block-list-content_list .estimate::before {
+    content: "04";
+    position: absolute;
+    width: 41.76px;
+    height: 41.76px;
+    background-color: #E3B873;
+    border-radius: 30px;
+    border: 8px solid #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    top: -12px;
+    left: -71px;
+    z-index: 1;
+    text-align: center;
+    font-family: "Yeseva One", 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ffffff;
+}
+
+
+/* 1. не понимаю, как позиционировать контент, чтобы он оказался по центру и горизонтально. Паддинг деформирует сам круг
+2. беспокоит, что так много кода. возможно, что есть более оптимизированное решение? */
+
+
+/* .measurement-block-list-content_list .appointment::before,
+.measurement-block-list-content_list .metering::before,
+.measurement-block-list-content_list .consulation::before,
+.measurement-block-list-content_list .estimate::before { */
+
+
+/* .measurement-block-list-content_list li::before {
+    content: "";
     width: 41.76px;
     height: 41.76px;
     background-color: #E3B873;
@@ -630,7 +711,7 @@ th .cost {
     border: 8px solid #FFFFFF;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
     position: absolute;
-    top: -5px;
+    top: -25%;
     left: -71px;
     z-index: 0;
     text-align: center;
@@ -638,7 +719,7 @@ th .cost {
     font-size: 18px;
     line-height: 25px;
     color: #ffffff;
-}
+} */
 
 
 /* доделать псевдоклассы списка */
@@ -667,6 +748,9 @@ th .cost {
     width: 408px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     position: relative;
+    font-size: 14px;
+    line-height: 23px;
+    color: #ffffff;
 }
 
 .measurement-block-input-content input::placeholder {
@@ -1081,6 +1165,9 @@ th .cost {
     width: 231px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     position: relative;
+    font-size: 14px;
+    line-height: 23px;
+    color: #ffffff;
 }
 
 .contacts-block-question-content input::placeholder {
