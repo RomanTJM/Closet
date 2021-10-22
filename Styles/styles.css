@@ -246,32 +246,32 @@ h1 .color {
     text-decoration-line: underline;
 }
 
-.completed-projects-block_content {
+.completed-projects-block-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 53px;
 }
 
-.completed-projects-block_content__text h2 {
+.completed-projects-block-content_text h2 {
     color: #E3B873;
     font-size: 27px;
     line-height: 37px;
     margin-bottom: 34px;
 }
 
-.completed-projects-block_content__text p {
+.completed-projects-block-content_text p {
     font-size: 14px;
     line-height: 27px;
     color: #ffffff;
 }
 
-.completed-projects-block_table {
+.completed-projects-block-content_table {
     border: none;
     margin-top: 42px;
 }
 
-.completed-projects-block_table th {
+.completed-projects-block-content_table th {
     text-align: left;
     padding-bottom: 9px;
     font-size: 18px;
@@ -297,7 +297,7 @@ th .cost {
     padding-top: 34px;
 }
 
-.completed-projects-block_table td {
+.completed-projects-block-content_table td {
     font-size: 13px;
     line-height: 21px;
     color: #FFFFFF;
