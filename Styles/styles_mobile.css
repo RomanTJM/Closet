@@ -379,6 +379,7 @@ h1 {
     height: 242px;
     margin-top: 166px;
     position: relative;
+    z-index: 1;
 }
 
 .gallery-block_slider::before {
@@ -435,6 +436,12 @@ h1 {
 .contacts-block-question-content h3 {
     font-size: 20px;
     line-height: 28px;
+    margin-top: 0;
+}
+
+.contacts-block-question-content-input-content {
+    display: block;
+    margin: 0;
 }
 
 .contacts-block-question-content .label {
@@ -451,7 +458,11 @@ h1 {
     display: inline-block;
 }
 
-.contacts-block-question-content .label:nth-child(4) {
+.contacts-block-question-content .label-question {
+    margin-bottom: 0;
+}
+
+.label-question .input {
     margin-bottom: 0;
 }
 
