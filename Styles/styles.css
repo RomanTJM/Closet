@@ -103,14 +103,14 @@ body * {
     height: 83px;
 }
 
-.header button {
+.header .button {
     font-size: 11px;
     line-height: 15px;
     width: 161px;
     height: 37px;
 }
 
-.header button:hover {
+.header .button:hover {
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 2px;
@@ -188,7 +188,7 @@ h1 .color {
     color: #FFFFFF;
 }
 
-.main-block-overlay {
+.main-block::after {
     content: '';
     position: absolute;
     top: 0;
@@ -199,7 +199,7 @@ h1 .color {
     z-index: -1;
 }
 
-.main-block button {
+.main-block .button {
     width: 207px;
     height: 51px;
     padding: 19px 22px;
@@ -208,7 +208,7 @@ h1 .color {
     line-height: 15px;
 }
 
-.main-block button:hover {
+.main-block .button:hover {
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 2px;
@@ -303,7 +303,7 @@ th .cost {
     color: #FFFFFF;
 }
 
-.completed-projects-block_content__slider {
+.completed-projects-block-content_slider {
     width: 190px;
     display: flex;
     flex-direction: row;
@@ -312,11 +312,11 @@ th .cost {
     margin-top: 80px;
 }
 
-.completed-projects-block_content__slider .arrow-left {
+.completed-projects-block-content_slider .arrow-left {
     margin-left: -20px;
 }
 
-.completed-projects-block_content__slider .arrow-right {
+.completed-projects-block-content_slider .arrow-right {
     margin-right: -20px;
 }
 
@@ -441,7 +441,7 @@ th .cost {
     margin-bottom: 39px;
 }
 
-.repairs-block-online-control-content-input-block input {
+.repairs-block-online-control-content-input-block .input {
     width: 231px;
     border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 }
@@ -450,11 +450,15 @@ th .cost {
     color: #363636;
 }
 
-.repairs-block-online-control-content-input-block button {
+.repairs-block-online-control-content-input-block .button {
     width: 200px;
     height: 51px;
     font-size: 13px;
     line-height: 27px;
+}
+
+.repairs-block-online-control-content .checkbox-black {
+    display: none;
 }
 
 .repairs-block-online-control-content .checkbox-black {
@@ -827,13 +831,14 @@ th .cost {
 .gallery-block {
     background-image: url("../Images/background-gallery.jpg");
     margin-top: 396.65px;
+    position: relative;
     /* padding-left: 99px; */
     /* padding-right: 102px; */
     height: 864px;
-    min-width: 1400px;
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: row;
+    background-color: transparent;
 }
 
 .gallery-block::after {
@@ -846,12 +851,28 @@ th .cost {
     background-color: rgba(0, 0, 0, .7);
 }
 
+
+/* .gallery-block .container {
+
+} */
+
+.gallery-block .mobile {
+    display: none;
+}
+
+.gallery-block_slider {
+    display: none;
+    margin-left: 18px;
+}
+
 .gallery-block-list-content {
     margin: 137.37px 77px 97.53px 99px;
     z-index: 1;
+    width: 299px;
 }
 
 .gallery-block-list-content h2 {
+    display: inline-block;
     width: 411px;
     margin-bottom: 47px;
     font-size: 27px;
@@ -1126,10 +1147,6 @@ th .cost {
     background-image: url("../Images/contacts-block-background.jpg");
     background-size: cover;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
 
 .contacts-block::after {
@@ -1140,6 +1157,13 @@ th .cost {
     left: 0;
     right: 0;
     bottom: 0;
+}
+
+.contacts-block .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .contacts-block-question-content {
@@ -1161,6 +1185,14 @@ th .cost {
     color: #ffffff;
 }
 
+.contacts-block-question-content-input-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 181.5px;
+}
+
 .contacts-block-question-content .input {
     width: 231px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
@@ -1168,6 +1200,7 @@ th .cost {
     font-size: 14px;
     line-height: 23px;
     color: #ffffff;
+    margin-bottom: 48.76px;
 }
 
 .contacts-block-question-content input::placeholder {
@@ -1183,9 +1216,9 @@ th .cost {
     color: rgba(255, 255, 255, 0.5);
 }
 
-.contacts-block-question-content label:nth-child(4) {
+.label-question .input {
     width: 516.82px;
-    /* margin-bottom: 52px; */
+    margin-bottom: 46.46px;
 }
 
 .contacts-block-question-content .checkbox {
@@ -1209,7 +1242,7 @@ th .cost {
     text-align: center;
 }
 
-.contacts-block-contacts-content h3 {
+.contacts-block-contacts-content .desktop {
     margin-bottom: 26px;
     position: relative;
     font-size: 20px;
@@ -1217,13 +1250,25 @@ th .cost {
     color: #E3B873;
 }
 
+.contacts-block-contacts-content h3 .mobile {
+    display: none;
+}
+
 .contacts-block-contacts-content_mail {
     background-image: url("../Vectors/mail.png");
     margin-right: 15px;
 }
 
+.contacts-block-contacts-content_mail__mobile {
+    display: none;
+}
+
 .contacts-block-contacts-content_instagram {
     background-image: url("../Vectors/instagram.png");
+}
+
+.contacts-block-contacts-content_instagram__mobile {
+    display: none;
 }
 
 .contacts-block-contacts-content_mail,
@@ -1255,14 +1300,14 @@ th .cost {
     height: 133px;
 }
 
-.footer button {
+.footer .button {
     font-size: 11px;
     line-height: 15px;
     width: 161px;
     height: 37px;
 }
 
-.footer button:hover {
+.footer .button:hover {
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 2px;
